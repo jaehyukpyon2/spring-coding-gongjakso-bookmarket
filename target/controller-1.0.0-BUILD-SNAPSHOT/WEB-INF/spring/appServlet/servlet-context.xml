@@ -20,6 +20,11 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	
+
+	<annotation-driven enable-matrix-variables="true" />
+
+	<!--Dispatcher Servlet이 Controller를 찾으려면, servlet-context.xml이 component-scan을 해야 함-->
+	<!--"com.springmvc.controller" 패키지만 servlet-context.xml이 component-scan하고,
+		Service단이나, Repository단은 root-context.xml이 component-scan해도 잘 동작-->
 	<context:component-scan base-package="com.springmvc" />
 </beans:beans>

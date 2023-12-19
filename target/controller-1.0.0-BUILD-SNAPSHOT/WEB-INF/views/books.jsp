@@ -28,8 +28,14 @@
                     <h3>${book.name}</h3>
                     <p>${book.author}
                         <br> ${book.publisher} | ${book.releaseDate}
-                    <p align=left>${fn:substring(book.description, 0, 100)}...
-                    <p>${book.unitPrice}원
+                    <p align=left>${fn:substring(book.description, 0, 100)}...</p>
+                    <p>${book.unitPrice}원</p>
+                    <p>
+                        <a class="btn btn-secondary" role="button"
+                           href="${pageContext.request.contextPath}/books/book?id=${book.bookId}">
+                           상세정보 &raquo;
+                        </a>
+                    </p>
                 </div>
             </c:forEach>
         </div>

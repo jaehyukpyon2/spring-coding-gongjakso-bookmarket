@@ -40,7 +40,7 @@ public class HomeController {
 		
 		return "home";*/
 
-		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/home");
+		httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/books");
 	}
 	
 }
