@@ -13,8 +13,10 @@
                        access="hasAuthority('ROLE_ADMIN')"/>
         <intercept-url pattern="/login"
                        access="permitAll()"/>
-        <intercept-url pattern="/*"
-                     access="hasAuthority('ROLE_ADMIN')"/>
+<!--        <intercept-url pattern="/*"-->
+<!--                     access="hasAuthority('ROLE_ADMIN')"/>
+            => localhost:8092/test.jsp 는 걸림, but localhost:8092/depth1/depth2/depth2.jsp는 안 걸림
+-->
 <!--        <intercept-url pattern="/**"-->
 <!--                       access="hasAuthority('ROLE_USER')"/>-->
            <!-- /** => localhost:8092/test.jsp 도 걸린다. 즉 로그인 안 됐다고 /login으로 redirect 시켜버림.-->
