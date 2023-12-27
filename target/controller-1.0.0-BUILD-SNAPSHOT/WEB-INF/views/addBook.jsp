@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-2 control-label">재고수 </label>
+                <label class="col-sm-2 control-label">재고수</label>
                 <div class="col-sm-3">
                     <form:input path="unitsInStock" class="form-control"/>
                 </div>
@@ -83,8 +83,8 @@
             <div class="form-group row">
                 <label class="col-sm-2 control-label">상태</label>
                 <div class="col-sm-3">
-                    <form:radiobutton path="condition" value="New"/> New
-                    <form:radiobutton path="condition" value="Old"/> Old
+                    <form:radiobutton path="condition" value="New"/>New
+                    <form:radiobutton path="condition" value="Old"/>Old
                     <form:radiobutton path="condition" value="E-Book"/>E-Book
                 </div>
             </div>
